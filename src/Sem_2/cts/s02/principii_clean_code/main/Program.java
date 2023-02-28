@@ -5,7 +5,7 @@ import java.util.List;
 
 import Sem_2.cts.s02.principii_clean_code.clase.Angajat;
 import Sem_2.cts.s02.principii_clean_code.clase.Utils;
-
+//Comm ptr. commit
 
 public class Program {
 
