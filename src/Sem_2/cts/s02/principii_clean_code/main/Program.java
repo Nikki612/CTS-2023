@@ -3,17 +3,18 @@ package Sem_2.cts.s02.principii_clean_code.main;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-import Sem_2.cts.s02.principii_clean_code.clase.Angajat;
-import Sem_2.cts.s02.principii_clean_code.clase.Utils;
+import Sem_2.cts.s02.principii_clean_code.clase.Aplicant;
+import Sem_2.cts.s02.principii_clean_code.clase.reader.ReaderAngajat;
 //Comm ptr. commit
 
 public class Program {
 
 	public static void main(String[] args) {
-		List<Angajat> listaAngajati;
+		List<Aplicant> listaAngajati;
+		ReaderAngajat readerAngajat=new ReaderAngajat();
 		try {
-			listaAngajati = Utils.readAngajati("angajati.txt");
-			for(Angajat angajat:listaAngajati)
+			listaAngajati = readerAngajat.readAplicants("angajati.txt");
+			for(Aplicant angajat:listaAngajati)
 				System.out.println(angajat.toString());
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
