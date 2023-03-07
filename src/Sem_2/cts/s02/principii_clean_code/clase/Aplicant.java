@@ -1,5 +1,7 @@
 package Sem_2.cts.s02.principii_clean_code.clase;
 
+import java.util.Arrays;
+
 public abstract class Aplicant{
 	protected String nume;
 	protected String prenume;
@@ -73,4 +75,15 @@ public abstract class Aplicant{
 	}
 
 	public abstract void afiseazaFinantarea();
+
+	@Override
+	public String toString() {
+		return ("Nume=" + nume + ", Prenume=" + prenume + ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte +  ", DenumireProiect=" + Arrays.toString(denumireProiect));
+	}
+
+	protected String afisareFinantare(int sumaFinantata)
+	{
+		return (this.nume+" "+this.prenume+" primeste "+sumaFinantata+ " Euro/zi in proiect.");
+	}
 }
+
