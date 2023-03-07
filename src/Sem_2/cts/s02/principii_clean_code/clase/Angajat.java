@@ -43,11 +43,8 @@ public class Angajat extends Aplicant{
 	}
 	
 	
-	public int afiseazaFinantarea() {
-		int s=10;
-		// TODO Auto-generated method stub
-		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");
-		return s;
+	public void afiseazaFinantarea() {
+		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+sumaFinantata+" Euro/zi in proiect.");
 	}
 	
 }
