@@ -5,7 +5,13 @@ import java.util.Arrays;
 public class Angajat extends Aplicant{
 	private String ocupatie;
 	private int salariu;
-	
+
+	private static int sumaFinantata;
+
+	public static void setSumaFinantata(int sumaFinantata) {
+		Angajat.sumaFinantata = sumaFinantata;
+	}
+
 	public String getOcupatie() {
 		return ocupatie;
 	}
@@ -37,7 +43,7 @@ public class Angajat extends Aplicant{
 	}
 	
 	
-	public int finantare() {
+	public int afiseazaFinantarea() {
 		int s=10;
 		// TODO Auto-generated method stub
 		System.out.println("Angajatul "+getNume()+" "+getPrenume()+" primeste"+s+" Euro/zi in proiect.");

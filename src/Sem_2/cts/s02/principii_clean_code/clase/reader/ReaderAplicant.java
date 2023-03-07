@@ -14,8 +14,9 @@ public abstract class ReaderAplicant {
         aplicant.setPrenume(input2.next());
         aplicant.setVarsta(Integer.valueOf(input2.nextInt()));
         aplicant.setPunctaj(Integer.valueOf(input2.nextInt()));
-        aplicant.setNr_proiecte(Integer.valueOf(input2.nextInt()));
-        String[] vect = new String[5];
+        int nr=Integer.valueOf(input2.nextInt());
+        aplicant.setNr_proiecte(nr);
+        String[] vect = new String[nr];
         for (int i = 0; i < aplicant.getNr_proiecte(); i++)
             vect[i] = input2.next();
     }
