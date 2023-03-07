@@ -7,8 +7,13 @@ public abstract class Aplicant{
 	protected int punctaj;
 	protected int nr_proiecte;
 	protected String[] denumireProiect;
-	
-	
+
+	protected static int pragAcceptare;
+
+	public static void setPragAcceptare(int pragAcceptare) {
+		Aplicant.pragAcceptare = pragAcceptare;
+	}
+
 	public String getNume() {
 		return nume;
 	}
@@ -27,12 +32,10 @@ public abstract class Aplicant{
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
-	public void statut(){
-		if(punctaj>80)
-			System.out.println("Aplicantul "+nume+" "+prenume+" a fost acceptat.");
-		else
-			System.out.println("Aplicantul "+nume+" "+prenume+" nu a fost acceptat.");
-		}
+	public void afisareStatus() {
+		System.out.println("Aplicantul " + this.nume + " " + this.prenume +
+				((this.punctaj > Aplicant.pragAcceptare) ? "": " nu")+" a fost acceptat.");
+	}
 	public int getPunctaj() {
 		return punctaj;
 	}
@@ -69,4 +72,5 @@ public abstract class Aplicant{
 		}
 	}
 
+	public abstract void afiseazaFinantarea();
 }
