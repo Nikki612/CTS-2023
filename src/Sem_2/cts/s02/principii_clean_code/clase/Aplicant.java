@@ -7,7 +7,7 @@ public abstract class Aplicant{
 	protected String prenume;
 	protected int varsta;
 	protected int punctaj;
-	protected int nr_proiecte;
+	protected int nrProiecte;
 	protected String[] denumireProiect;
 
 	protected static int pragAcceptare;
@@ -53,22 +53,26 @@ public abstract class Aplicant{
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumireProiect) {
+	public Aplicant(String nume, String prenume, int varsta, int punctaj, int nrProiecte, String[] denumireProiect) {
 		super();
 		this.nume = nume;
 		this.prenume = prenume;
 		this.varsta = varsta;
 		this.punctaj = punctaj;
-		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect = denumireProiect;
+		this.nrProiecte = nrProiecte;
+		this.denumireProiect = new String[nrProiecte];
+		for(int i = 0; i< nrProiecte; i++)
+		{
+			this.denumireProiect[i]=denumireProiect[i];
+		}
 	}
-	public int getNr_proiecte() {
-		return nr_proiecte;
+	public int getNrProiecte() {
+		return nrProiecte;
 	}
-	public void setNr_proiecte(int nr_proiecte) {
-		this.nr_proiecte = nr_proiecte;
-		this.denumireProiect=new String[nr_proiecte];
-		for(int i=0;i<nr_proiecte;i++)
+	public void setNrProiecte(int nrProiecte) {
+		this.nrProiecte = nrProiecte;
+		this.denumireProiect=new String[nrProiecte];
+		for(int i = 0; i< nrProiecte; i++)
 		{
 			this.denumireProiect[i]=denumireProiect[i];
 		}
@@ -78,7 +82,7 @@ public abstract class Aplicant{
 
 	@Override
 	public String toString() {
-		return ("Nume=" + nume + ", Prenume=" + prenume + ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nr_proiecte +  ", DenumireProiect=" + Arrays.toString(denumireProiect));
+		return ("Nume=" + nume + ", Prenume=" + prenume + ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nrProiecte +  ", DenumireProiect=" + Arrays.toString(denumireProiect));
 	}
 
 	protected String afisareFinantare(int sumaFinantata)

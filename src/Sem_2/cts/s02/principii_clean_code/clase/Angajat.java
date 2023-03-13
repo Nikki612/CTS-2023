@@ -1,7 +1,5 @@
 package Sem_2.cts.s02.principii_clean_code.clase;
 
-import java.util.Arrays;
-
 public class Angajat extends Aplicant{
 	private String ocupatie;
 	private int salariu;
