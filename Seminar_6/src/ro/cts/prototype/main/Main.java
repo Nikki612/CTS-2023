@@ -8,5 +8,6 @@ public class Main {
         Client client=new Client("Andrei","0757563236","andrei@email.com");
         AbstractPrototype client2=client.createCopy();
         System.out.println(client2.toString());
+
     }
 }
