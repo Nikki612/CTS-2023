@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CTS_Solved/CTS_Solved.iml" filepath="$PROJECT_DIR$/CTS_Solved/CTS_Solved.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/Sem_2/Sem_2.iml" filepath="$PROJECT_DIR$/src/Sem_2/Sem_2.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar4_SingleTon/Seminar4_SingleTon.iml" filepath="$PROJECT_DIR$/Seminar4_SingleTon/Seminar4_SingleTon.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar5_Factory/Seminar5_Factory.iml" filepath="$PROJECT_DIR$/Seminar5_Factory/Seminar5_Factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminar_6/Seminar_6.iml" filepath="$PROJECT_DIR$/Seminar_6/Seminar_6.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seminars.iml" filepath="$PROJECT_DIR$/Seminars.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CTS_Solved/Spital/Spital.iml" filepath="$PROJECT_DIR$/CTS_Solved/Spital/Spital.iml" />
     </modules>
   </component>
 </project>
