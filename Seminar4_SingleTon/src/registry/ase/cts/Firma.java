@@ -10,7 +10,8 @@ public class Firma {
 
     private static Map<String,Firma> firme=new HashMap<>();
 
-    private Firma(String nume, int cifraAfaceri, int numarAngajati) {
+    private Firma(String nume, int cifraAfaceri, int numarAngajati)
+    {
         this.nume = nume;
         this.cifraAfaceri = cifraAfaceri;
         this.numarAngajati = numarAngajati;
@@ -32,7 +33,8 @@ public class Firma {
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         final StringBuilder sb = new StringBuilder("Firma{");
         sb.append("nume='").append(nume).append('\'');
         sb.append(", cifraAfaceri=").append(cifraAfaceri);
