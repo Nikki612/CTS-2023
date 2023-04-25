@@ -4,6 +4,7 @@ import ro.cts.adapter.model.existent.Credit;
 import ro.cts.adapter.model.existent.CreditAdapterClass;
 import ro.cts.adapter.model.existent.CreditIpotecar;
 import ro.cts.adapter.model.nou.CreditLeasing;
+import ro.cts.adapter_obiect.CreditAdapterObject;
 
 public class Main {
 
@@ -17,5 +18,8 @@ public class Main {
 
         Credit adapterClass=new CreditAdapterClass();
         afiseazaCredit(adapterClass,2020.34f);
+
+        Credit adapterObject=new CreditAdapterObject(leasing);
+        afiseazaCredit(adapterObject,3005.8f);
     }
 }
